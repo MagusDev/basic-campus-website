@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content="with-device-width, initial-scale=1.0">
+    <title>Website Design training</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-------header and menu------>
+
+
+    <section class = "sub-header">
+        <nav>
+            <a href="index.html"><img src="images/eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSES</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>         
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+
+    </section>
+
+<!-------About Us------>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the best</h1>
+            <p>we're the coolest crew of magical misfits, here to unleash the magic within you. we're all about embracing the enchanting, pushing the boundaries of what's possible, and having a wicked good time along the way. join us at the academy of mystical arts, where we'll guide you on a mind-blowing journey through the realms of magic. <br> together, let's turn whimsy into reality and make the impossible possible. get ready to wield your wand and embrace the extraordinary.</p>
+            <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+            <img src="images/eduford_img/about.jpg" >
+        </div>
+    </div>
+</section>
+
+   
+
+
+
+
+
+<!-------footer------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The Academy of Mystical Arts is a renowned institution dedicated to nurturing and honing the talents of aspiring magicians. With a rich history and a diverse faculty of experienced sorcerers, we provide a transformative learning experience where students can unlock their full magical potential. <br> Join us on a journey of wonder and discovery as we delve into the realms of enchantment and cultivate a new generation of skilled practitioners.</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-telegram-plane"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>made with <i class="fas fa-heart"> </i> by Mage </p>
+</section>
+
+
+<script>
+
+<!------Js to hide menu------>   
+var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

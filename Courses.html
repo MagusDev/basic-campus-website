@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content="with-device-width, initial-scale=1.0">
+    <title>Website Design training</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-------header and menu------>
+
+
+    <section class = "sub-header">
+        <nav>
+            <a href="index.html"><img src="images/eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSES</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>         
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+
+
+    </section>
+
+<!-------Courses------>
+
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>Explore a diverse range of magical courses taught by skilled practitioners. Master the arcane arts, from spellcasting to potion-making, and unlock the secrets of the mystical realm.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Mystical Arts 101</h3>
+            <p>Discover the fundamentals of spellcasting, from invoking enchantments to harnessing the power of the elements, as you embark on your magical journey.</p>
+        </div>
+        <div class="course-col">
+            <h3>Enchanting Potions and Brews</h3>
+            <p>Dive into the world of potion-making, where you'll learn the art of concocting magical elixirs and brews with various ingredients to achieve extraordinary effects.</p>
+        </div>
+        <div class="course-col">
+            <h3>Defensive Magic</h3>
+            <p>Master the essential skills of protection as you delve into the realm of defensive magic, exploring powerful shielding spells and warding techniques to safeguard against mystical threats.</p>
+        </div>
+    </div>
+</section>
+   
+
+
+<!-------facitites------>
+<section class="facilities">
+    <h1>Our creatures</h1>
+    <p>Discover a mesmerizing array of enchanting creatures in our realm, each possessing unique powers and captivating beauty. Immerse yourself in their magical presence and unlock the secrets they hold.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/serpent.jpg">
+            <h3>Stardust Serpent</h3>
+            <p>A majestic serpent with shimmering scales that emit a celestial glow, harnessing the power of starlight to enchant and mesmerize.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="images/phoenix.jpg">
+            <h3>Moonshadow Phoenix</h3>
+            <p>A rare and mysterious phoenix that emerges from the depths of darkness, its feathers imbued with the essence of the moon, granting it the ability to manipulate shadows and soar through the night sky.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="images/groffin.jpg">
+            <h3>Crystalwing Griffin</h3>
+            <p>A mythical creature with the body of a lion and the wings of an eagle, adorned with crystalline feathers that refract light, symbolizing wisdom and protection.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-------footer------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The Academy of Mystical Arts is a renowned institution dedicated to nurturing and honing the talents of aspiring magicians. With a rich history and a diverse faculty of experienced sorcerers, we provide a transformative learning experience where students can unlock their full magical potential. <br> Join us on a journey of wonder and discovery as we delve into the realms of enchantment and cultivate a new generation of skilled practitioners.</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-telegram-plane"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>made with <i class="fas fa-heart"> </i> by Mage </p>
+</section>
+
+<script>
+
+<!------Js to hide menu------>   
+var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
